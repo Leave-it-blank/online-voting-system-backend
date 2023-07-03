@@ -3,7 +3,7 @@ import { Request, Response, NextFunction } from 'express';
 import { MongoClient, ServerApiVersion } from 'mongodb';
  
 const uri = process.env.MONGO_DB || ``;
-console.log(uri);
+
 const client = new MongoClient(uri, {
     serverApi: {
       version: ServerApiVersion.v1,
